@@ -1,0 +1,62 @@
+{
+	"home": {
+		"data": [
+			"Here you can find examples of my work and learn more about me.",
+			"My name is Anh Vu, and I am a Software Developer based in United States. I specialize in Front End Development, and I have 2 years of experience in the field.",
+			"Feel free to browse my portfolio and learn more about the projects I have worked on. If you have any questions or would like to discuss a potential project, please don't hesitate to"
+		]
+	},
+	"introduction": {
+		"name": "Anh Vu",
+		"title": "Software Engineer",
+		"bio": [
+			"I am a skilled software developer with experience in multiple programming languages including Python, C++, Java, JavaScript, Typescript, HTML, CSS, and C#.",
+			"I have worked with various libraries and frameworks including React, Node.js, .NET, and Bootstrap, as well as databases such as MySQL, MongoDB, and Object Relational Database.",
+			"My professional experience includes working as a Software Development Engineer II at Paycom, where I implemented front-end technical solutions using PHP and jQuery, optimized website usability and accessibility, and generated unit tests for React components using Jest and React Testing Library."
+		]
+	},
+	"skills": {
+		"categories": [
+			{
+				"name": "Front End Development",
+				"skills": [
+					"HTML",
+					"CSS",
+					"JavaScript",
+					"React"
+				]
+			},
+			{
+				"name": "Web Design",
+				"skills": [
+					"UI/UX Design",
+					"Responsive Design"
+				]
+			}
+		]
+	},
+	"projects": [
+		{
+			"title": "Project 1",
+			"description": "A brief description of Project 1...",
+			"technologies": [
+				"React",
+				"HTML",
+				"CSS"
+			],
+			"link": "https://project1.link",
+			"image": "project1-image.jpg"
+		},
+		{
+			"title": "Project 2",
+			"description": "Another project description...",
+			"technologies": [
+				"React",
+				"Node.js",
+				"MongoDB"
+			],
+			"link": "https://project2.link",
+			"image": "project2-image.jpg"
+		}
+	]
+}
