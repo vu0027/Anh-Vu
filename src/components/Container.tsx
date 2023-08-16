@@ -4,23 +4,31 @@ import styled from 'styled-components';
 const SectionContainer = styled.section<{ backgroundColor?: string }>`
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: ${props => props.backgroundColor || '#f0f0f0'};
+  background-color: ${props => props.backgroundColor};
 `;
 
 interface SectionContainerProps {
   backgroundColor?: string;
   id: string;
   children: React.ReactNode;
+  verticalLineUp?: boolean;
 }
 
 const Container: React.FC<SectionContainerProps> = ({
   backgroundColor,
   id,
   children,
+  verticalLineUp,
 }) => {
-  return <SectionContainer id={id} backgroundColor={backgroundColor}>{children}</SectionContainer>;
+  let containerStyle: React.CSSProperties = {};
+  if (verticalLineUp) {
+    containerStyle = {
+      display: 'flex',
+      flexDirection: 'column',
+    };
+  }
+  return <SectionContainer id={id} backgroundColor={backgroundColor} style={containerStyle}>{children}</SectionContainer>;
 };
 
 export default Container;

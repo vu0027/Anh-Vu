@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-const NavbarContainer = styled.div`
+const NavbarContainer = styled(Link)`
   display: flex;
   justify-content: flex-end;
   align-items: center;
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 1rem;
+  right: 1.5rem;
   height: 60px; /* Adjust as needed */
   width: 100%;
+  z-index: 1;
 `;
 
 const HamburgerButton = styled.button<{ isOpen: boolean }>`
@@ -26,7 +28,7 @@ const HamburgerButton = styled.button<{ isOpen: boolean }>`
 const HamburgerLine = styled.span<{ isOpen: boolean }>`
   width: 30px;
   height: 3px;
-  background-color: black;
+  background-color: ${props => (props.isOpen ? 'white' : 'black')};
   transition: transform 0.3s;
 
   margin-top: ${props => (props.isOpen ? '18px' : '10px')};
@@ -49,13 +51,32 @@ interface NavBarProps {
 }
 
 const NavBar: React.FC<NavBarProps> = ({ isOpen, toggleMenu }) => {
+  const sidebarRef = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node))
+        toggleMenu();
+    };
+    if (isOpen)
+      window.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      window.removeEventListener('click', handleOutsideClick);
+    };
+  }, [isOpen, toggleMenu]);
+
+  const handleHamburgerClick = (event: React.MouseEvent) => {
+    event.preventDefault();
+    toggleMenu();
+  };
+
   return (
-    <NavbarContainer>
-      <HamburgerButton isOpen={isOpen} onClick={toggleMenu}>
+    <NavbarContainer to="/">
+      <HamburgerButton isOpen={isOpen} onClick={handleHamburgerClick} ref={sidebarRef as any}>
         <HamburgerLine isOpen={isOpen} />
         <HamburgerLine isOpen={isOpen} />
       </HamburgerButton>
-      {/* ... other navbar content */}
     </NavbarContainer>
   );
 };

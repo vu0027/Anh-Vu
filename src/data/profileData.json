@@ -1,11 +1,4 @@
 {
-	"home": {
-		"data": [
-			"Here you can find examples of my work and learn more about me.",
-			"My name is Anh Vu, and I am a Software Developer based in United States. I specialize in Front End Development, and I have 2 years of experience in the field.",
-			"Feel free to browse my portfolio and learn more about the projects I have worked on. If you have any questions or would like to discuss a potential project, please don't hesitate to"
-		]
-	},
 	"introduction": {
 		"name": "Anh Vu",
 		"title": "Software Engineer",
@@ -13,6 +6,34 @@
 			"I am a skilled software developer with experience in multiple programming languages including Python, C++, Java, JavaScript, Typescript, HTML, CSS, and C#.",
 			"I have worked with various libraries and frameworks including React, Node.js, .NET, and Bootstrap, as well as databases such as MySQL, MongoDB, and Object Relational Database.",
 			"My professional experience includes working as a Software Development Engineer II at Paycom, where I implemented front-end technical solutions using PHP and jQuery, optimized website usability and accessibility, and generated unit tests for React components using Jest and React Testing Library."
+		]
+	},
+	"about": {
+		"experience": [
+			{
+				"companyName": "Paycom",
+				"jobTitle": "Software Engineer",
+				"jobDetails": [
+					"Build reusable React Component.",
+					"Improved product quality, bug fixes.",
+					"Write React unit testing."
+				],
+				"companyLogo": "/images/companylogos/paycom-logo.png",
+				"startDate": "July 2021",
+				"endDate": "current"
+			},
+			{
+				"companyName": "Intelek Technologies",
+				"jobTitle": "Software Engineer Intern",
+				"jobDetails": [
+					"Build reusable React Component.",
+					"Improved product quality, bug fixes.",
+					"Write React unit testing."
+				],
+				"companyLogo": "/images/companylogos/intelek-logo.png",
+				"startDate": "June 2019",
+				"endDate": "March 2020"
+			}
 		]
 	},
 	"skills": {
@@ -45,7 +66,7 @@
 				"CSS"
 			],
 			"link": "https://project1.link",
-			"image": "project1-image.jpg"
+			"image": "/images/projects/project1"
 		},
 		{
 			"title": "Project 2",
@@ -56,7 +77,21 @@
 				"MongoDB"
 			],
 			"link": "https://project2.link",
-			"image": "project2-image.jpg"
+			"image": "/images/projects/project2"
+		}
+	],
+	"blog": [
+		{
+			"title": "Blog 1",
+			"description": "A brief description of Project 1...",
+			"link": "https://project1.link",
+			"content": "Content 1"
+		},
+		{
+			"title": "Blog 2",
+			"description": "Another project description...",
+			"link": "https://project2.link",
+			"content": "Content 2"
 		}
 	]
 }

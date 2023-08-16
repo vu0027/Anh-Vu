@@ -8,18 +8,15 @@ import styled from '@emotion/styled';
 import { useState } from 'react';
 import Sidebar from './components/SideBar';
 import Blog from './pages/Blog';
+import React from 'react';
 
-
-const PageWrapper = styled.div`
-  display: flex;
-  overflow: hidden;
-`;
-
-const ContentContainer = styled.div`
-  flex: 1;
+const CenteredContent = styled.div`
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 40px;
 `;
 
 function App() {
@@ -32,22 +29,34 @@ function App() {
   const closeMenu = () => {
     setMenuOpen(false);
   };
+
   return (
     <Router>
+      <Sidebar isOpen={menuOpen} closeMenu={closeMenu} />
+      <NavBar isOpen={menuOpen} toggleMenu={toggleMenu} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/resume" element={(
+          <React.Fragment>
+            <CenteredContent>
+              <a href={process.env.PUBLIC_URL + "/pdf/AnhVu_Resume.pdf"} download style={{ zIndex: 2 }}>
+                <p>Download Resume</p>
+              </a>
+            </CenteredContent>
 
-    <Sidebar isOpen={menuOpen} closeMenu={closeMenu} />
-    <NavBar isOpen={menuOpen} toggleMenu={toggleMenu} />
-    <Routes>
-      <Route path="/home" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/resume" element={<PDFViewer
-          document={{
-            url: process.env.PUBLIC_URL + "/pdf/AnhVu_Resume.pdf"
-          }}
-        />} />
-    </Routes>
+            <PDFViewer
+              hideNavbar
+              document={{
+                url: process.env.PUBLIC_URL + "/pdf/AnhVu_Resume.pdf"
+              }}
+            />
+
+          </React.Fragment>
+        )} />
+      </Routes>
     </Router>
   );
 }

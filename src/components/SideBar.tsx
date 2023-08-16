@@ -1,26 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import Typography from './Typography';
 
 const SidebarContainer = styled.div<{ isOpen: boolean }>`
-  width: 250px;
-  background-color: #333;
+  background-color: #74cdcc;
   height: 100vh;
   position: fixed;
-  right: ${props => (props.isOpen ? '0' : '-250px')};
+	width: 12rem;
+  right: ${props => (props.isOpen ? '0' : '-20rem')};
   transition: right 0.3s;
+	box-shadow: 0px 0px 20px;
+	z-index: 1;
 `;
 
 const NavLinkContainer = styled.nav`
-  margin-top: 3rem;
-  padding: 1rem;
+  margin-top: 5rem;
+  padding: 2rem;
+	z-index: 1;
 `;
 
 const NavLinkStyled = styled(NavLink)`
   display: block;
   color: white;
   text-decoration: none;
-  margin-bottom: 1rem;
+  margin-bottom: 25%;
   font-size: 1.2rem;
 
   &:hover {
@@ -41,20 +45,20 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, closeMenu }) => {
 	return (
 		<SidebarContainer isOpen={isOpen}>
 			<NavLinkContainer>
-				<NavLinkStyled to="home" onClick={handleNavLinkClick}>
-					Home
+				<NavLinkStyled to="" onClick={handleNavLinkClick}>
+					<Typography>Home</Typography>
 				</NavLinkStyled>
 				<NavLinkStyled to="about" onClick={handleNavLinkClick}>
-					About
+					<Typography>About</Typography>
 				</NavLinkStyled>
 				<NavLinkStyled to="projects" onClick={handleNavLinkClick}>
-					Projects
+					<Typography>Projects</Typography>
 				</NavLinkStyled>
 				<NavLinkStyled to="resume" onClick={handleNavLinkClick}>
-					Resume
+					<Typography>Resume</Typography>
 				</NavLinkStyled>
 				<NavLinkStyled to="blog" onClick={handleNavLinkClick}>
-					Blog
+					<Typography>Blog</Typography>
 				</NavLinkStyled>
 			</NavLinkContainer>
 		</SidebarContainer>
