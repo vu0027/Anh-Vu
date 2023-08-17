@@ -83,7 +83,7 @@
 	"blog": [
 		{
 			"title": "Blog 1",
-			"description": "A brief description of Project 1...",
+			"description": "A brief description of Blog 1...",
 			"link": "https://project1.link",
 			"content": "Content 1"
 		},
