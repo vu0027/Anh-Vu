@@ -3,21 +3,13 @@ image: node:14
 stages:
   - build
 
+before_script:
+  - npm install
+
 build:
   stage: build
   script:
-    - npm install
     - npm run build
   artifacts:
     paths:
-      - build
-
-pages:
-  stage: deploy
-  script:
-    - mv build public
-  artifacts:
-    paths:
-      - public
-  only:
-    - master
+      - build/
