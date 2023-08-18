@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
-import Card from "@mui/material/Card"
-import Typography from "./Typography";
+import styled from '@emotion/styled';
+import Card from '@mui/material/Card'
+import Typography from './Typography';
 
 export interface ProjectCardProps {
 	title?: string;
@@ -31,14 +31,14 @@ const ProjectCard = ({
 	const projectImageUrl = process.env.PUBLIC_URL + image;
 
 	return (
-		<Card style={{ maxWidth:'350px', width: '80%', margin:'5%', backgroundColor: "#D9D9D9"}}>
+		<Card style={{ maxWidth:'350px', width: '80%', margin:'5%', backgroundColor: '#D9D9D9'}}>
 			<BodyCard>
 				<div>
           <img style={{width: '20%'}} src={projectImageUrl} alt={title + 'Image'} />
         </div>
 			</BodyCard>
 			<FooterCard>
-				<Typography fontSize="15px">{title}</Typography>
+				<Typography fontSize='15px'>{title}</Typography>
 			</FooterCard>
 		</Card>
 	)

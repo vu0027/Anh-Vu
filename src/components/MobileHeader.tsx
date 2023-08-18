@@ -21,7 +21,7 @@ const MobileHeader: React.FC = () => {
   return (
     <HeaderWrapper to='/'>
       <Typography bold fontSize='18px'>ANH VU</Typography>
-			<Typography color="#8a8a8a">Software Engineer</Typography>
+			<Typography color='#8a8a8a'>Software Engineer</Typography>
     </HeaderWrapper>
   );
 };

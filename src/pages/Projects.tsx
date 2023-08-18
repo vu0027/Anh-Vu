@@ -11,8 +11,8 @@ const About: React.FC = () => {
   return (
     <React.Fragment>
       <MobileHeader />
-      <Container id="about" backgroundColor='#F8FFF6' verticalLineUp>
-      <Typography color="#45826C" underline style={{marginTop: '3%'}}>Projects</Typography>
+      <Container id='about' backgroundColor='#F8FFF6' verticalLineUp>
+      <Typography color='#45826C' underline style={{marginTop: '3%'}}>Projects</Typography>
         {projects.map((project) => {
           return (
             <ProjectCard

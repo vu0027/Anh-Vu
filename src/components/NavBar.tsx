@@ -11,7 +11,7 @@ const NavbarContainer = styled(Link)`
   right: 1.5rem;
   height: 60px; /* Adjust as needed */
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 `;
 
 const HamburgerButton = styled.button<{ isOpen: boolean }>`
@@ -23,6 +23,7 @@ const HamburgerButton = styled.button<{ isOpen: boolean }>`
   background: transparent;
   border: none;
   cursor: pointer;
+  margin-bottom: 34px;
 `;
 
 const HamburgerLine = styled.span<{ isOpen: boolean }>`
@@ -72,7 +73,7 @@ const NavBar: React.FC<NavBarProps> = ({ isOpen, toggleMenu }) => {
   };
 
   return (
-    <NavbarContainer to="/">
+    <NavbarContainer to='/'>
       <HamburgerButton isOpen={isOpen} onClick={handleHamburgerClick} ref={sidebarRef as any}>
         <HamburgerLine isOpen={isOpen} />
         <HamburgerLine isOpen={isOpen} />

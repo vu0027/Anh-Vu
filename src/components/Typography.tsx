@@ -35,7 +35,7 @@ const Typography: FC<TypographyProps> = ({
   const fontWeight = bold ? 'bold' : 'normal';
   const lightFrontWeight = lightBold && !bold ? 'lighter' : 'normal';
 
-  const fontFamily = "Chalkduster, fantasy";
+  const fontFamily = 'Chalkduster, fantasy';
 
   const typographyStyle = {
     fontWeight: clickableText ? fontWeight || lightFrontWeight : fontWeight,
@@ -49,7 +49,7 @@ const Typography: FC<TypographyProps> = ({
   if (clickableText && to) {
     if (externalLink) {
       return (
-        <a href={externalLink} target="_blank" rel="noopener noreferrer" style={{ ...typographyStyle, ...style }} {...rest}>
+        <a href={externalLink} target='_blank' rel='noopener noreferrer' style={{ ...typographyStyle, ...style }} {...rest}>
           {children}
         </a>
       );

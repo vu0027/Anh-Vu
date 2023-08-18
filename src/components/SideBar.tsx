@@ -11,7 +11,7 @@ const SidebarContainer = styled.div<{ isOpen: boolean }>`
   right: ${props => (props.isOpen ? '0' : '-20rem')};
   transition: right 0.3s;
 	box-shadow: 0px 0px 20px;
-	z-index: 1;
+	z-index: 2;
 `;
 
 const NavLinkContainer = styled.nav`
@@ -45,19 +45,19 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, closeMenu }) => {
 	return (
 		<SidebarContainer isOpen={isOpen}>
 			<NavLinkContainer>
-				<NavLinkStyled to="" onClick={handleNavLinkClick}>
+				<NavLinkStyled to='' onClick={handleNavLinkClick}>
 					<Typography>Home</Typography>
 				</NavLinkStyled>
-				<NavLinkStyled to="about" onClick={handleNavLinkClick}>
+				<NavLinkStyled to='about' onClick={handleNavLinkClick}>
 					<Typography>About</Typography>
 				</NavLinkStyled>
-				<NavLinkStyled to="projects" onClick={handleNavLinkClick}>
+				<NavLinkStyled to='projects' onClick={handleNavLinkClick}>
 					<Typography>Projects</Typography>
 				</NavLinkStyled>
-				<NavLinkStyled to="resume" onClick={handleNavLinkClick}>
+				<NavLinkStyled to='resume' onClick={handleNavLinkClick}>
 					<Typography>Resume</Typography>
 				</NavLinkStyled>
-				<NavLinkStyled to="blog" onClick={handleNavLinkClick}>
+				<NavLinkStyled to='blog' onClick={handleNavLinkClick}>
 					<Typography>Blog</Typography>
 				</NavLinkStyled>
 			</NavLinkContainer>

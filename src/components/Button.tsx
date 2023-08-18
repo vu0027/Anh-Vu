@@ -30,7 +30,8 @@ const Button: FC<CustomButtonProps> = ({
     borderRadius,
     backgroundColor,
     color: textColor,
-		fontFamily: fontFamily
+		fontFamily: fontFamily,
+    margin: '3%',
   };
 
   return (

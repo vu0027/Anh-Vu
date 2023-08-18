@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
-import Card from "@mui/material/Card"
-import Typography from "./Typography";
+import styled from '@emotion/styled';
+import Card from '@mui/material/Card'
+import Typography from './Typography';
 
 export interface JobCardProps {
 	companyLogo?: any;
@@ -68,7 +68,7 @@ const JobCard = ({
 			</BodyCard>
 			<HorizontalLine />
 			<FooterCard>
-				<Typography fontSize="15px">{startDate + ' - ' + endDate}</Typography>
+				<Typography fontSize='15px'>{startDate + ' - ' + endDate}</Typography>
 			</FooterCard>
 		</Card>
 	)

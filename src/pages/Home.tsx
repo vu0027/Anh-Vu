@@ -18,7 +18,11 @@ const BackgroundContainer = styled.div`
 `;
 
 const TextContentWrapper = styled.div`
-  padding: 0 12% 12%;
+  padding-left: 50%;
+  padding-bottom: 5%;
+  @media (max-width: 768px) {
+    padding: 0 12% 12%;
+  }
 `;
 
 const HomeWrapper = styled.div`
@@ -29,13 +33,16 @@ const HomeWrapper = styled.div`
 const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 15%;
+  padding-left: 50%;
+  @media (max-width: 768px) {
+    padding-left: 12%;
+  }
 `;
 
 const Home: React.FC = () => {
 
   return (
-    <Container id="home">
+    <Container id='home'>
       <BackgroundContainer />
       <HomeWrapper>
         <TextContentWrapper>
