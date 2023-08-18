@@ -50,26 +50,26 @@ function App() {
       <NavBar isOpen={menuOpen} toggleMenu={toggleMenu} />
       <ContentOverlay menuOpen={menuOpen} />
       <Routes>
-        <Route path={'/'} element={<Home />} />
-        <Route path='/about' element={
+        <Route path={'/Anh-Vu/'} element={<Home />} />
+        <Route path='/Anh-Vu//about' element={
           <React.Fragment>
             <BackButton />
             <About />
           </React.Fragment>
         } />
-        <Route path='/projects' element={
+        <Route path='/Anh-Vu//projects' element={
           <React.Fragment>
             <BackButton />
             <Projects />
           </React.Fragment>
         } />
-        <Route path='/blog' element={
+        <Route path='/Anh-Vu//blog' element={
           <React.Fragment>
             <BackButton />
             <Blog />
           </React.Fragment>
         } />
-        <Route path='/resume' element={(
+        <Route path='/Anh-Vu//resume' element={(
           <React.Fragment>
             <BackButton />
             <CenteredContent>
