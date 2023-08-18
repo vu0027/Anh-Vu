@@ -45,31 +45,31 @@ function App() {
 
   };
   return (
-    <Router basename='/Anh-Vu'>
+    <Router basename='/'>
       <Sidebar isOpen={menuOpen} closeMenu={closeMenu} />
       <NavBar isOpen={menuOpen} toggleMenu={toggleMenu} />
       <ContentOverlay menuOpen={menuOpen} />
       <Routes>
-        <Route path={'/Anh-Vu/'} element={<Home />} />
-        <Route path='/Anh-Vu//about' element={
+        <Route path={'/'} element={<Home />} />
+        <Route path='/about' element={
           <React.Fragment>
             <BackButton />
             <About />
           </React.Fragment>
         } />
-        <Route path='/Anh-Vu//projects' element={
+        <Route path='/projects' element={
           <React.Fragment>
             <BackButton />
             <Projects />
           </React.Fragment>
         } />
-        <Route path='/Anh-Vu//blog' element={
+        <Route path='/blog' element={
           <React.Fragment>
             <BackButton />
             <Blog />
           </React.Fragment>
         } />
-        <Route path='/Anh-Vu//resume' element={(
+        <Route path='/resume' element={(
           <React.Fragment>
             <BackButton />
             <CenteredContent>
