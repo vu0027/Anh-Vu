@@ -45,7 +45,7 @@ function App() {
 
   };
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Sidebar isOpen={menuOpen} closeMenu={closeMenu} />
       <NavBar isOpen={menuOpen} toggleMenu={toggleMenu} />
       <ContentOverlay menuOpen={menuOpen} />
