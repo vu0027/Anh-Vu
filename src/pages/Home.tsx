@@ -8,7 +8,7 @@ const BackgroundContainer = styled.div`
   position: absolute;
   width: 100%;
   min-height: 100vh;
-  background: url('/images/profile-photo.png') no-repeat bottom -20px right -300px;
+  background: url('/profile-photo.png') no-repeat bottom -20px right -300px;
   background-size: 70%;
   opacity: 0.3;
   @media (max-width: 768px) {
