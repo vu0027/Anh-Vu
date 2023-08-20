@@ -18,7 +18,7 @@ const ProjectsContainer = styled.div`
   }
 `;
 
-const About: React.FC = () => {
+const Project: React.FC = () => {
   const [showQuizPage, setShowQuizPage] = useState(false);
 
   const navigateToQuizPage = () => {
@@ -41,7 +41,6 @@ const About: React.FC = () => {
                 <ProjectCard
                   title={project.title}
                   image={project.image}
-                  link={project.link}
                 />
               )
             })};
@@ -55,4 +54,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default Project;

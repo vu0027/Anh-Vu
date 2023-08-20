@@ -166,7 +166,6 @@ const WhichCountry: React.FC = () => {
 				)}
 				{currentQuestionIndex < quizData.length - 2 && currentQuestionIndex > 0 && !quizCompleted && (
 					<Button color='error' variant="contained" onClick={handleNextButtonClick}>Next</Button>
-
 				)}
 			</ButtonWrapper>
 			<div style={{marginLeft: '30%', marginTop: '0%'}}>
