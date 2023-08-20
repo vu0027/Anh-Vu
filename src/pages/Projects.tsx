@@ -41,7 +41,7 @@ const About: React.FC = () => {
                 <ProjectCard
                   title={project.title}
                   image={project.image}
-                  link={project.title === 'Project 2' ? undefined : project.link}
+                  link={project.title === 'Which country is your ideal place to live?' ? undefined : project.link}
                 />
               )
             })};
