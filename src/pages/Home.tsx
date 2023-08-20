@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import Typography from '../components/Typography';
 import Button from '../components/Button';
 
-const BackgroundContainer = styled.div`
+const BackgroundContainer = styled.div<{background?: string}>`
   position: absolute;
   width: 100%;
   min-height: 100vh;
-  background: url('profile-photo.png') no-repeat bottom -20px right -300px;
+  background: url(${process.env.PUBLIC_URL}/profile-photo.png) no-repeat bottom -20px right -300px;
   background-size: 70%;
   opacity: 0.3;
   @media (max-width: 768px) {
