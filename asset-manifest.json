@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Anh-Vu/static/css/main.85d2ec5c.css",
-    "main.js": "/Anh-Vu/static/js/main.72f76252.js",
+    "main.js": "/Anh-Vu/static/js/main.db90c18d.js",
     "static/media/MaterialIcons-Regular.eot": "/Anh-Vu/static/media/MaterialIcons-Regular.4674f8ded773cb03e824.eot",
     "static/media/MaterialIcons-Regular.ttf": "/Anh-Vu/static/media/MaterialIcons-Regular.5e7382c63da0098d634a.ttf",
     "static/media/MaterialIcons-Regular.woff": "/Anh-Vu/static/media/MaterialIcons-Regular.83bebaf37c09c7e1c3ee.woff",
     "static/media/MaterialIcons-Regular.woff2": "/Anh-Vu/static/media/MaterialIcons-Regular.cff684e59ffb052d72cb.woff2",
     "index.html": "/Anh-Vu/index.html",
     "main.85d2ec5c.css.map": "/Anh-Vu/static/css/main.85d2ec5c.css.map",
-    "main.72f76252.js.map": "/Anh-Vu/static/js/main.72f76252.js.map"
+    "main.db90c18d.js.map": "/Anh-Vu/static/js/main.db90c18d.js.map"
   },
   "entrypoints": [
     "static/css/main.85d2ec5c.css",
-    "static/js/main.72f76252.js"
+    "static/js/main.db90c18d.js"
   ]
 }
