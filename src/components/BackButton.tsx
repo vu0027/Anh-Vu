@@ -18,7 +18,6 @@ const StyledArrowBackIcon = styled(ArrowBackIcon)`
   }
 `;
 
-
 interface BackButtonProps {
   label?: string;
 }
