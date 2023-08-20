@@ -9,7 +9,7 @@ const NavbarContainer = styled(Link)`
   position: fixed;
   top: 1rem;
   right: 1.5rem;
-  height: 60px; /* Adjust as needed */
+  height: 60px;
   width: 100%;
   z-index: 2;
 `;
@@ -23,7 +23,10 @@ const HamburgerButton = styled.button<{ isOpen: boolean }>`
   background: transparent;
   border: none;
   cursor: pointer;
-  margin-bottom: 34px;
+  margin-bottom: 10px;
+  @media (max-width: 768px) {
+    margin-bottom: 34px;
+  }
 `;
 
 const HamburgerLine = styled.span<{ isOpen: boolean }>`

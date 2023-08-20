@@ -58,15 +58,15 @@
 	},
 	"projects": [
 		{
-			"title": "Project 1",
+			"title": "I am Rich",
 			"description": "A brief description of Project 1...",
 			"technologies": [
 				"React",
 				"HTML",
 				"CSS"
 			],
-			"link": "https://project1.link",
-			"image": "/images/projects/project1"
+			"link": "https://github.com/vu0027/I-am-Rich-app/tree/main/I%20Am%20Rich",
+			"image": "/images/projects/project1.png"
 		},
 		{
 			"title": "Project 2",
@@ -77,7 +77,7 @@
 				"MongoDB"
 			],
 			"link": "https://project2.link",
-			"image": "/images/projects/project2"
+			"image": "/images/projects/project2.png"
 		}
 	],
 	"blog": [

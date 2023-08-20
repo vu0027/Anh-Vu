@@ -12,7 +12,12 @@ const StyledArrowBackIcon = styled(ArrowBackIcon)`
   cursor: pointer;
 	padding-left: 29%;
 	padding-top: 32%;
+  font-size: 4.2rem !important;
+  @media (max-width: 768px) {
+    font-size: 3.1rem !important;
+  }
 `;
+
 
 interface BackButtonProps {
   label?: string;
@@ -25,7 +30,7 @@ const BackButton: React.FC<BackButtonProps> = ({ label = 'Go Back' }) => {
 
   return (
 		<BackButtonWrapper>
-      <StyledArrowBackIcon style={{fontSize: '3.1rem'}} onClick={handleGoBack} />
+		<StyledArrowBackIcon onClick={handleGoBack} />;
 		</BackButtonWrapper>
   );
 };
