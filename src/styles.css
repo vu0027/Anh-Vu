@@ -1,6 +1,7 @@
 .App {
   margin: 300px calc(20vw + 30px) 30px;
   font-family: "Gill Sans";
+  height: 100%;
 }
 
 code {

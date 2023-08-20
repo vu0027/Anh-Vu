@@ -42,8 +42,8 @@ const Typography: FC<TypographyProps> = ({
     fontFamily,
     color,
     cursor: clickableText ? 'pointer' : 'auto',
-    textDecoration: underline ? 'underline' : 'none', // Apply underline if underline prop is true
-    fontSize
+    textDecoration: underline ? 'underline' : 'none',
+    fontSize: fontSize
   };
 
   if (clickableText && to) {

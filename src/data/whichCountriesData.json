@@ -1,0 +1,227 @@
+[
+	{
+		"question": "What type of climate do you prefer?",
+		"answers": [
+			{
+				"answer": "Tropical",
+				"points": {
+					"Vietnam": 1,
+					"Costa Rica": 1,
+					"Thailand": 1
+				}
+			},
+			{
+				"answer": "Temperate",
+				"points": {
+					"Taiwan": 1,
+					"New Zealand": 1,
+					"Canada": 1
+				}
+			},
+			{
+				"answer": "Four Seasons",
+				"points": {
+					"USA": 1,
+					"United Kingdom": 1,
+					"Germany": 1
+				}
+			},
+			{
+				"answer": "Mediterranean",
+				"points": {
+					"Greece": 1,
+					"Italy": 1,
+					"Spain": 1
+				}
+			},
+			{
+				"answer": "Desert",
+				"points": {
+					"United Arab Emirates": 1,
+					"Saudi Arabia": 1,
+					"Egypt": 1
+				}
+			}
+		]
+	},
+	{
+		"question": "Which landscape do you find most appealing?",
+		"answers": [
+			{
+				"answer": "Mountains",
+				"points": {
+					"Switzerland": 1,
+					"Austria": 1,
+					"Nepal": 1
+				}
+			},
+			{
+				"answer": "Beaches",
+				"points": {
+					"Thailand": 1,
+					"Maldives": 1,
+					"Australia": 1
+				}
+			},
+			{
+				"answer": "Countryside",
+				"points": {
+					"France": 1,
+					"Tuscany": 1,
+					"Ireland": 1
+				}
+			},
+			{
+				"answer": "Cityscape",
+				"points": {
+					"Japan": 1,
+					"Singapore": 1,
+					"Hong Kong": 1
+				}
+			},
+			{
+				"answer": "Rainforests",
+				"points": {
+					"Brazil": 1,
+					"Costa Rica": 1,
+					"Indonesia": 1
+				}
+			}
+		]
+	},
+	{
+		"question": "What type of cuisine do you enjoy the most?",
+		"answers": [
+			{
+				"answer": "Asian",
+				"points": {
+					"Vietnam": 1,
+					"Thailand": 1,
+					"Japan": 1
+				}
+			},
+			{
+				"answer": "Italian",
+				"points": {
+					"Italy": 1,
+					"France": 1,
+					"Spain": 1
+				}
+			},
+			{
+				"answer": "American",
+				"points": {
+					"USA": 1,
+					"Canada": 1,
+					"Australia": 1
+				}
+			},
+			{
+				"answer": "Mediterranean",
+				"points": {
+					"Greece": 1,
+					"Turkey": 1,
+					"Spain": 1
+				}
+			},
+			{
+				"answer": "Japanese",
+				"points": {
+					"Japan": 1,
+					"South Korea": 1,
+					"Taiwan": 1
+				}
+			}
+		]
+	},
+	{
+		"question": "How important is cultural diversity to you?",
+		"answers": [
+			{
+				"answer": "Very Important",
+				"points": {
+					"USA": 1,
+					"Canada": 1,
+					"Australia": 1
+				}
+			},
+			{
+				"answer": "Somewhat Important",
+				"points": {
+					"Taiwan": 1,
+					"Germany": 1,
+					"Netherlands": 1
+				}
+			},
+			{
+				"answer": "Moderately Important",
+				"points": {
+					"Canada": 1,
+					"France": 1,
+					"United Kingdom": 1
+				}
+			},
+			{
+				"answer": "Not Very Important",
+				"points": {
+					"Finland": 1,
+					"Norway": 1,
+					"Sweden": 1
+				}
+			},
+			{
+				"answer": "Not Important at All",
+				"points": {
+					"Monaco": 1,
+					"Liechtenstein": 1,
+					"Brunei": 1
+				}
+			}
+		]
+	},
+	{
+		"question": "What is your preferred mode of transportation?",
+		"answers": [
+			{
+				"answer": "Public Transit",
+				"points": {
+					"Japan": 1,
+					"Singapore": 1,
+					"Hong Kong": 1
+				}
+			},
+			{
+				"answer": "Bicycling",
+				"points": {
+					"Netherlands": 1,
+					"Denmark": 1,
+					"Germany": 1
+				}
+			},
+			{
+				"answer": "Driving",
+				"points": {
+					"USA": 1,
+					"Canada": 1,
+					"Australia": 1
+				}
+			},
+			{
+				"answer": "Walking",
+				"points": {
+					"Italy": 1,
+					"France": 1,
+					"Spain": 1
+				}
+			},
+			{
+				"answer": "Motorbike",
+				"points": {
+					"Vietnam": 1,
+					"Thailand": 1,
+					"Indonesia": 1
+				}
+			}
+		]
+	}
+]

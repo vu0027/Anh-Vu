@@ -16,7 +16,8 @@
 				"jobDetails": [
 					"Build reusable React Component.",
 					"Improved product quality, bug fixes.",
-					"Write React unit testing."
+					"Write React unit testing.",
+					"Optimized website usability and accessibility."
 				],
 				"companyLogo": "/images/companylogos/paycom-logo.png",
 				"startDate": "July 2021",
@@ -26,9 +27,9 @@
 				"companyName": "Intelek Technologies",
 				"jobTitle": "Software Engineer Intern",
 				"jobDetails": [
-					"Build reusable React Component.",
-					"Improved product quality, bug fixes.",
-					"Write React unit testing."
+					"Designed, structured, and implemented new websites.",
+					"Styled website content and layout using CSS and HTML to enhance user experience.",
+					"Developed efficient VB.NET scripts for data extraction and parsing from XML, EDI files."
 				],
 				"companyLogo": "/images/companylogos/intelek-logo.png",
 				"startDate": "June 2019",
@@ -69,7 +70,7 @@
 			"image": "/images/projects/project1.png"
 		},
 		{
-			"title": "Project 2",
+			"title": "Which country is your ideal place to live?",
 			"description": "Another project description...",
 			"technologies": [
 				"React",
@@ -89,7 +90,7 @@
 		},
 		{
 			"title": "Blog 2",
-			"description": "Another project description...",
+			"description": "A brief description of Blog 2...",
 			"link": "https://project2.link",
 			"content": "Content 2"
 		}
