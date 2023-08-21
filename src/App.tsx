@@ -42,7 +42,6 @@ function App() {
 
   const closeMenu = () => {
     setMenuOpen(false);
-
   };
   return (
     <Router>
