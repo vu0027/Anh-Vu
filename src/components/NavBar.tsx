@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const NavbarContainer = styled(Link)`
+const NavbarContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -76,7 +76,7 @@ const NavBar: React.FC<NavBarProps> = ({ isOpen, toggleMenu }) => {
   };
 
   return (
-    <NavbarContainer to='/'>
+    <NavbarContainer >
       <HamburgerButton isOpen={isOpen} onClick={handleHamburgerClick} ref={sidebarRef as any}>
         <HamburgerLine isOpen={isOpen} />
         <HamburgerLine isOpen={isOpen} />

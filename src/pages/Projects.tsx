@@ -20,10 +20,10 @@ const ProjectsContainer = styled.div`
 
 const Project: React.FC = () => {
   const [showQuizPage, setShowQuizPage] = useState(false);
-
-  const navigateToQuizPage = () => {
+  const [currentProjectTitle, setCurrentProjectTitle] = useState('');
+  const navigateToQuizPage = (title: string) => {
+    setCurrentProjectTitle(title);
     const conditionIsMet = true;
-
     if (conditionIsMet) {
       setShowQuizPage(true);
     }
@@ -35,12 +35,13 @@ const Project: React.FC = () => {
           <MobileHeader />
           <Container id='about' backgroundColor='#F8FFF6' verticalLineUp>
           <Typography color='#45826C' underline style={{marginTop: '3%'}}>Projects</Typography>
-          <ProjectsContainer onClick={navigateToQuizPage}>
+          <ProjectsContainer>
             {projects.map((project) => {
               return (
                 <ProjectCard
                   title={project.title}
                   image={project.image}
+                  onClick={() => navigateToQuizPage(project.title)}
                 />
               )
             })};
@@ -48,7 +49,7 @@ const Project: React.FC = () => {
           </Container>
         </React.Fragment>
       )}
-      {showQuizPage && <WhichCountry />}
+      {showQuizPage && currentProjectTitle === 'Which country is your ideal place to live?'  && <WhichCountry />}
 
     </React.Fragment>
   );

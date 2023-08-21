@@ -131,7 +131,6 @@ const WhichCountry: React.FC = () => {
 	};
 
 	const handleBackButtonClick = () => {
-		// Move to the previous question if not already at the first question
 		if (currentQuestionIndex > 0) {
 			setCurrentQuestionIndex(currentQuestionIndex - 1);
 		}
@@ -155,7 +154,6 @@ const WhichCountry: React.FC = () => {
 
 	return (
 		<Wrapper>
-			<BackButton />
 			<StyledTypography bold color="#000" fontSize='150%'>Which country is your ideal place to live?</StyledTypography>
 			<StyledCard style={{backgroundColor: '#000', borderRadius: '5%'}}>
 				{renderQuiz()}

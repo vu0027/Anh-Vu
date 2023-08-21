@@ -9,6 +9,7 @@ export interface ProjectCardProps {
 	link?: string;
 	technologies?: string[];
 	image?: any;
+	onClick?: () => void;
 }
 
 const BodyCard = styled.div`
@@ -27,12 +28,13 @@ const ProjectCard = ({
 	link,
 	technologies,
 	image,
+	onClick
 }: ProjectCardProps) => {
 
 	const projectImageUrl = process.env.PUBLIC_URL + image;
 
 	return (
-		<Card style={{ maxWidth: '550px', margin:'5%', backgroundColor: '#D9D9D9', cursor: 'pointer'}}>
+		<Card onClick={onClick} style={{ maxWidth: '550px', margin:'5%', backgroundColor: '#D9D9D9', cursor: 'pointer'}}>
 			<BodyCard>
 				<div>
 					<img style={{width: '450px', height: '300px'}} src={projectImageUrl} alt={title + 'Image'} />
