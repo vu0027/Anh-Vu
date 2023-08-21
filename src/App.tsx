@@ -48,9 +48,10 @@ function App() {
     <Router>
       <Sidebar isOpen={menuOpen} closeMenu={closeMenu} />
       <NavBar isOpen={menuOpen} toggleMenu={toggleMenu} />
+      <Home />
       <ContentOverlay menuOpen={menuOpen} />
       <Routes>
-        <Route path={'/'} element={<Home />} />
+        <Route path={'/Anh-Vu'} element={<Home />} />
         <Route path='/about' element={
           <React.Fragment>
             <BackButton />
