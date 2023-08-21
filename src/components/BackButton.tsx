@@ -29,7 +29,7 @@ const BackButton: React.FC<BackButtonProps> = ({ label = 'Go Back' }) => {
 
   return (
 		<BackButtonWrapper>
-			<StyledArrowBackIcon onClick={handleGoBack} />;
+			<StyledArrowBackIcon onClick={handleGoBack} />
 		</BackButtonWrapper>
   );
 };

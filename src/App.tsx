@@ -10,6 +10,7 @@ import Sidebar from './components/SideBar';
 import Blog from './pages/Blog';
 import React from 'react';
 import BackButton from './components/BackButton';
+import WhichCountry from './pages/WhichCountry';
 
 const CenteredContent = styled.div`
   display: flex;
@@ -66,6 +67,12 @@ function App() {
           <React.Fragment>
             <BackButton />
             <Blog />
+          </React.Fragment>
+        } />
+        <Route path='/whichcountry' element={
+          <React.Fragment>
+            <BackButton />
+            <WhichCountry />
           </React.Fragment>
         } />
         <Route path='/resume' element={(

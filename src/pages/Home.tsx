@@ -55,6 +55,7 @@ const Home: React.FC = () => {
 
         <ButtonWrapper>
           <Button text='See My Project' to='/projects' />
+          <Button text='Play a Country Quiz' to='/whichcountry' />
           <Button text='More About Me' to='/about' />
           <Button text='Resume' to='/resume'/>
           <Button text='Blog' to='/blog'/>
