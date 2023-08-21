@@ -51,7 +51,7 @@ function App() {
       <Home />
       <ContentOverlay menuOpen={menuOpen} />
       <Routes>
-        <Route path={'/Anh-Vu'} element={<Home />} />
+        <Route path={'/'} element={<Home />} />
         <Route path='/about' element={
           <React.Fragment>
             <BackButton />

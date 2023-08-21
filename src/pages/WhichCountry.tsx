@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import quizData from '../data/whichCountriesData.json';
 import countriesMap from '../data/countriesMap.json';
 import styled from 'styled-components';
-import BackButton from '../components/BackButton';
 import Card from '@mui/material/Card';
 import MultipleChoice from '../components/MultipleChoices';
 import Typography from '../components/Typography';

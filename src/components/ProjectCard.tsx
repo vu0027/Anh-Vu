@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import Card from '@mui/material/Card'
 import Typography from './Typography';
-import { Link } from 'react-router-dom';
 
 export interface ProjectCardProps {
 	title?: string;
