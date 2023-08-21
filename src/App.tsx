@@ -48,7 +48,6 @@ function App() {
     <Router>
       <Sidebar isOpen={menuOpen} closeMenu={closeMenu} />
       <NavBar isOpen={menuOpen} toggleMenu={toggleMenu} />
-      <Home />
       <ContentOverlay menuOpen={menuOpen} />
       <Routes>
         <Route path={'/'} element={<Home />} />
